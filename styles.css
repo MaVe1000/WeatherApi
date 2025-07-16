@@ -1,0 +1,94 @@
+:root {
+  --color-primario: #fff;
+  --color-texto2: #1195a6;
+  --color-hover: #0a5f6afa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #b5c1c2, #14bef1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  font-size: 1.4rem;
+  color: var(--color-primario);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+select,
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+}
+button {
+  background-color: #1195a6;
+  color: var(--color-primario);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  margin: 12px;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background-color: var(--color-hover);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--color-primario);
+  margin: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  background-image: -o-linear-gradient(to bottom, #0c7380, #12076c);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.345);
+  padding: 40px 20px;
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.345);
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#resultado p {
+  color: var(--color-texto2);
+  margin: 10px 0;
+}
+
+canvas {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
