@@ -1,16 +1,12 @@
 function consultarClima() {
   const ciudad = document.querySelector("#ciudad").value.trim();
-  const apiKey = "fc63d7944314f573bf96a4b3bc6c2306"; // Clave personal de OpenWeatherMap----> fc63d7944314f573bf96a4b3bc6c2306    key profe:  799edad109b009ce1a9a4a6bc519ccf1
-  //const pais = document.querySelector("#pais").value;
   if (ciudad === "") {
     document.getElementById("resultado").innerHTML =
       "Por favor, escribe una ciudad.";
     return;
   }
 
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&APPID=${apiKey}`
-  )
+  fetch('https://backendweatherapi-ny6r.onrender.com/api/clima?ciudad=' + ciudad)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
