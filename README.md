@@ -43,9 +43,9 @@ This project allows users to check the current weather in any city worldwide usi
 
 ## 🔐 API Key
 
-Este proyecto requiere una API Key de OpenWeatherMap. Debes registrarte para obtenerla y reemplazar el valor en el archivo script.js.
+Este proyecto ahora obtiene la clave API del servicio de backend desplegado en Render. Ya no es necesario registrarse para obtener una clave API de OpenWeatherMap ni modificar el archivo script.js. La conexión al servicio de OpenWeatherMap se gestiona de forma segura a través del backend.
 
-This project requires an API Key from OpenWeatherMap. You must sign up to get it and replace the placeholder in the script.js file.
+This project now obtains the API key from the backend service deployed on Render. It is no longer necessary to register for an OpenWeatherMap API key or modify the script.js file. The connection to the OpenWeatherMap service is securely managed through the backend.
 
 ---
 
